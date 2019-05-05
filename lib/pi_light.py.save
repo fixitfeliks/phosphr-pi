@@ -1,0 +1,23 @@
+print("import start")
+#import requests
+print("import complete")
+
+id = ""
+type = 'action.devices.types.LIGHT'
+traits =  [
+      'action.devices.traits.OnOff',
+      'action.devices.traits.Brightness',
+      'action.devices.traits.ColorSpectrum']
+defaultNames: ['SmartLight'],
+name:'Smart Light 0',
+nicknames: ['Feliks Light']},
+willReportState: false,
+roomHint: '',
+deviceInfo: {manufacturer: 'Phosphr Cloud',
+      model:'fp1337',
+      swVersion: '0.0.1',
+      hwVersion: '0.1.0'},
+
+print(traits)
+#r = requests.get("https://fixitfeliks.com/dynamo")
+#print( r.text)

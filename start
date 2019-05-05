@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo python3 manage.py runserver localhost:3000
+echo starting...

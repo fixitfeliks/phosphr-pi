@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="favicon.png">
+<title>Fix it Feliks</title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+<div class="w3-row">
+    <div class="w3-col" style="width:28%;height:10px;">
+      <div></div>
+    </div>
+    <div class="w3-col" style="width:44%;height:100%;">
+	  <div style="w3-display-topmiddle;text-align:center;font-size:20px;font-family:calibri;">
+    <br>
+    {% load static %}
+    <img src="{% static "omw.png" %}" alt="My image">
+    <br><br>
+    <b>Welcome to phosphr</b>
+    <div style="w3-display-topmiddle;text-align:left;font-size:20px;font-family:calibri;padding-top:10px;">
+      <form  action="https://FixitFeliks.com/phosphr" class="w3-container" method="post">
+        <div>
+        <input class="w3-input" type="text" name="email" required>
+        <label>Email</label>
+        <input class="w3-input" input type="password" type="text" name="pwd0" required>
+        <label>Password</label>
+        <input class="w3-input" input type="password" type="text" name="pwd1" required>
+        <label>Confirm Password</label>
+        <input type="hidden" name="intent" value="register">
+        <input type="hidden" name="id" value="{{id}}">
+
+        </div>
+        <div style="padding-top:10px;">
+          <input class="w3-btn w3-indigo"  type="submit" value="Register Device" style="width:100%;">
+        </div>
+      </form>
+    </div>
+    <div class="w3-col" style="width:28%;height:10px;">
+		</div>
+	</div>
+</div>
+
+
+</body>
+
+</html>
